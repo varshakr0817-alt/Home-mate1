@@ -1,0 +1,584 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #222;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 7%;
+  background: white;
+  box-shadow: 0 2px 8px #ddd;
+}
+
+.logo {
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  color: #2563eb;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #2563eb;
+}
+
+
+/* =========================
+   HOME PAGE
+========================= */
+
+.home {
+  min-height: 80vh;
+}
+
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(
+    135deg,
+    #eff6ff,
+    #ffffff
+  );
+}
+
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+  color: #1e3a8a;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #666;
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.hero button:hover {
+  background: #1d4ed8;
+}
+
+
+/* =========================
+   WHY CHOOSE HOMeMATCH
+========================= */
+
+.why {
+  padding: 50px 7%;
+  background: #f5f7fb;
+}
+
+.why h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 35px;
+  color: #222;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.feature {
+  background: white;
+  padding: 30px 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #ddd;
+  transition: 0.2s;
+}
+
+.feature:hover {
+  transform: translateY(-4px);
+}
+
+.feature > div {
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  margin: 10px 0;
+  color: #222;
+}
+
+.feature p {
+  color: #666;
+  line-height: 1.5;
+}
+
+
+/* =========================
+   PROPERTIES PAGE
+========================= */
+
+.properties-page {
+  padding: 40px 7%;
+}
+
+.properties-page h1 {
+  margin-bottom: 10px;
+}
+
+.page-description {
+  color: #666;
+}
+
+
+/* =========================
+   SEARCH BAR
+========================= */
+
+.search-bar {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 25px 0;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #ddd;
+}
+
+.search-bar input,
+.search-bar select {
+  padding: 11px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+
+/* =========================
+   PROPERTY GRID
+========================= */
+
+.property-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(280px, 1fr)
+  );
+  gap: 25px;
+  margin-top: 25px;
+}
+
+
+/* =========================
+   PROPERTY CARD
+========================= */
+
+.property-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px #ddd;
+  transition: 0.2s;
+}
+
+.property-card:hover {
+  transform: translateY(-3px);
+}
+
+.property-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.property-content {
+  padding: 20px;
+}
+
+.property-type {
+  display: inline-block;
+  color: #2563eb;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.property-content h3 {
+  margin: 8px 0;
+}
+
+.property-content h2 {
+  color: #2563eb;
+}
+
+.property-content p {
+  color: #666;
+}
+
+.property-info {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 15px 0;
+  color: #555;
+}
+
+.match {
+  color: #16a34a;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+
+/* =========================
+   PROPERTY BUTTONS
+========================= */
+
+.card-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.card-buttons button {
+  flex: 1;
+  padding: 9px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #eef2ff;
+}
+
+.card-buttons button:hover {
+  background: #dbeafe;
+}
+
+.details-button {
+  display: block;
+  margin-top: 12px;
+  padding: 10px;
+  text-align: center;
+  background: #2563eb;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.details-button:hover {
+  background: #1d4ed8;
+}
+
+
+/* =========================
+   FAVORITES / EMPTY PAGE
+========================= */
+
+.empty-page {
+  text-align: center;
+  padding: 50px;
+  margin-top: 25px;
+  background: white;
+  border-radius: 10px;
+}
+
+.no-results {
+  text-align: center;
+  padding: 30px;
+  color: #666;
+}
+
+
+/* =========================
+   LOGIN PAGE
+========================= */
+
+.login-page {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.login-box {
+  width: 350px;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.login-box h1 {
+  text-align: center;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+.login-box h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.login-box p {
+  text-align: center;
+  color: #666;
+}
+
+.login-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.login-box label {
+  font-weight: bold;
+}
+
+.login-box input {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.login-box input:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.login-box button {
+  margin-top: 10px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-box button:hover {
+  background: #1d4ed8;
+}
+
+.login-box a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.login-box a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   COMPARE PAGE
+========================= */
+
+.compare-page {
+  padding: 40px 7%;
+}
+
+.compare-page h1 {
+  margin-bottom: 10px;
+  color: #1e3a8a;
+}
+
+.compare-page > p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+
+/* =========================
+   COMPARE CONTAINER
+========================= */
+
+.compare-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+
+/* =========================
+   COMPARE CARD
+========================= */
+
+.compare-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px #ddd;
+  transition: 0.2s;
+}
+
+.compare-card:hover {
+  transform: translateY(-3px);
+}
+
+
+/* =========================
+   COMPARE IMAGE
+========================= */
+
+.compare-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+
+/* =========================
+   COMPARE CONTENT
+========================= */
+
+.compare-content {
+  padding: 20px;
+}
+
+.compare-content h3 {
+  margin: 0 0 15px 0;
+  font-size: 22px;
+  color: #222;
+}
+
+.compare-content p {
+  margin: 10px 0;
+  color: #555;
+}
+
+.compare-content .match {
+  color: #16a34a;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+
+/* =========================
+   RECOMMENDATION
+========================= */
+
+.recommendation {
+  margin-top: 35px;
+  padding: 25px;
+  background: #eff6ff;
+  border-radius: 12px;
+  border-left: 5px solid #2563eb;
+}
+
+.recommendation h2 {
+  margin-top: 0;
+  color: #1e3a8a;
+}
+
+.recommendation p {
+  color: #555;
+  line-height: 1.5;
+}
+
+
+/* =========================
+   PROPERTY DETAILS
+========================= */
+
+.property-details {
+  padding: 40px 7%;
+}
+
+.property-details img {
+  width: 100%;
+  max-width: 700px;
+  border-radius: 12px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .properties-page {
+    padding: 25px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .login-box {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  /* Features */
+
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  /* Compare */
+
+  .compare-page {
+    padding: 25px;
+  }
+
+  .compare-container {
+    grid-template-columns: 1fr;
+  }
+
+  .compare-image {
+    height: 180px;
+  }
+}
