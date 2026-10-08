@@ -9,7 +9,7 @@ import Navbar from "./components/Navbar";
 
 import Home from "./pages/Home";
 import Properties from "./pages/Properties";
-import Favorites from "./pages/favorites";
+import Favorites from "./pages/Favorites";
 import PropertyDetails from "./pages/PropertyDetails";
 import Compare from "./pages/Compare";
 import Login from "./pages/login";

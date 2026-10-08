@@ -43,7 +43,7 @@ function Favorites({
               compareList={compareList}
               toggleCompare={toggleCompare}
             />
-          ))}
+          )) }
 
         </div>
 
